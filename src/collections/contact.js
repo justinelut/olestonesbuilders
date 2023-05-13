@@ -7,7 +7,7 @@ const Contact = {
         delete: () => false
     },
     admin: {
-        useAsTitle: 'name',
+        useAsTitle: 'email',
     },
     fields: [
         {

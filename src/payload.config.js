@@ -26,14 +26,16 @@ import Faqs from './collections/faqs';
 import Icon from './components/favicon';
 import Logo from './components/logo';
 import Team from './collections/Team';
-
+import SendEmails from './collections/sendemails';
+import Emails from './collections/emails';
 
 export default buildConfig({
   serverURL: process.env.SERVER_URL,
   cors: [
     "https://api.safaricom.com",
     "https://sandbox.safaricom.com",
-    "https://olestonesbuilders.co.ke"
+    "https://olestonesbuilders.co.ke",
+    "https://daviddev.verixr.com"
   ],
   admin: {
     user: Users.slug,
@@ -50,7 +52,28 @@ export default buildConfig({
     }
 
   },
-  collections: [Categories, Tags, Posts, Products, Orders, Team, Payments, Reviews, Media, Services, WhyUs, Faqs, Projects, Gallery, Contact, Location, Delivery, MpesaLogs, Users],
+  collections: [Categories, 
+    Tags, 
+    Posts, 
+    Products, 
+    Orders, 
+    Team, 
+    Payments,
+     Reviews, 
+     Media, 
+     Services, 
+     WhyUs, 
+     Faqs, 
+     Projects, 
+     Gallery,
+      Contact, 
+      Location, 
+      Delivery, 
+      MpesaLogs, 
+      Users,
+      Emails,
+      SendEmails
+    ],
 
   globals: [
     Featured,
