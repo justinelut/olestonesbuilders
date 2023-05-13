@@ -32,7 +32,8 @@ export default buildConfig({
   serverURL: process.env.SERVER_URL,
   cors: [
     "https://api.safaricom.com",
-    "https://sandbox.safaricom.com"
+    "https://sandbox.safaricom.com",
+    "https://olestonesbuilders.co.ke"
   ],
   admin: {
     user: Users.slug,
