@@ -5,7 +5,7 @@ import path from 'path'
 require('dotenv').config();
 const app = express();
 app.use('/media', express.static(path.resolve(__dirname, '../media')));
-app.use("/", express.static(path.resolve(__dirname, './frontend')))
+app.use(/^\/(?!api).*/, express.static(path.resolve(__dirname, './frontend')));
 
 
 const start = async () => {
