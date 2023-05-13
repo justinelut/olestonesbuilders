@@ -39,7 +39,7 @@ const start = async () => {
 
   // Add your own express routes here
   app.use(express.json())
-  app.use("/", express.static(path.resolve(__dirname, './frontend')))
+  app.use("/", express.static(path.resolve(__dirname, '/public')))
 
   app.listen(process.env.PORT);
 }
