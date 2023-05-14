@@ -3,9 +3,10 @@ import React from 'react'
 export default function Logo() {
 
     return (
-        <div className="flex items-center">
-            {/* <img src="/assets/logo.png" alt="Logo" /> */}
-            <span style={{fontWeight: 'bold', fontSize: '30px'}}>Olestones Admin</span>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', fontWeight: 'bold', fontSize: '1.5rem' }}>
+            <img style={{ width: '70px', height: '70px', marginBottom: '10px' }} src="/assets/favicon.png" alt="Logo" />
+            <div style={{marginTop: '10px' }}>OLESTONES ADMIN</div>
         </div>
+
     )
 }
