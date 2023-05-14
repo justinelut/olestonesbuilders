@@ -6,7 +6,7 @@ import nodemailer from 'nodemailer'
 require('dotenv').config();
 const app = express();
 app.use('/media', express.static(path.resolve(__dirname, '../media')));
-app.use('/icons', express.static(path.resolve(__dirname, '../icons')));
+app.use('/assets', express.static(path.resolve(__dirname, '../assets')));
 
 
 
