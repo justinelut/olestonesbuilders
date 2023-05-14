@@ -1,3 +1,5 @@
+import formatSlug from "../utils/formatSlug";
+
 const Projects = {
     slug: 'projects',
     access: {
@@ -16,18 +18,18 @@ const Projects = {
         {
             name: 'description',
             type: 'textarea',
-            label: 'Project Description',
+            label: 'Overall Project Description',
             required: true,
         },
         {
-            name: 'image', // required
+            name: 'descriptor', // required
             type: 'array', // required
-            label: 'Image Grid',
+            label: 'Project Images',
             minRows: 2,
             maxRows: 10,
             labels: {
-                singular: 'Image',
-                plural: 'Images',
+                singular: 'Project Image',
+                plural: 'Project Images',
             },
             fields: [ // required
                 {
@@ -38,6 +40,19 @@ const Projects = {
                     required: true,
                 },
             ],
+        },
+        {
+            name: 'slug',
+            type: 'text',
+            label: 'Slug',
+            admin: {
+                position: 'sidebar',
+            },
+            hooks: {
+                beforeValidate: [
+                    formatSlug("title")
+                ]
+            },
         }
     ],
 };

@@ -1,4 +1,5 @@
 import payload from "payload";
+import MailBox from "./mailboxlink";
 
 const SendEmails = {
     slug: 'sendEmails',
@@ -52,6 +53,16 @@ const SendEmails = {
                 readOnly: true,
                 position: 'sidebar',
                 condition: (data) => Boolean(data?.createdBy),
+            },
+        },
+        {
+            name: "chat",
+            type: "ui",
+            admin: {
+                position: 'sidebar',
+                components: {
+                    Field: MailBox,
+                },
             },
         },
     ],
