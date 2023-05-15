@@ -13,7 +13,13 @@ const Contact = {
         {
             name: 'name', // required
             type: 'text', // required
-            label: 'Name',
+            label: 'Full Names',
+            required: true,
+        },
+        {
+            name: 'phonenumber', // required
+            type: 'number', // required
+            label: 'Phone Number',
             required: true,
         },
         {

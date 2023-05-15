@@ -7,7 +7,7 @@ const SendEmails = {
         read: () => true,
     },
     admin: {
-        useAsTitle: 'subject',
+        useAsTitle: 'emailto',
     },
     fields: [
         {

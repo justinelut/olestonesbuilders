@@ -28,6 +28,7 @@ import Logo from './components/logo';
 import Team from './collections/Team';
 import SendEmails from './collections/sendemails';
 import Emails from './collections/emails';
+import Pages from './collections/pages';
 
 export default buildConfig({
   serverURL: process.env.SERVER_URL,
@@ -54,6 +55,7 @@ export default buildConfig({
   },
   collections: [Categories, 
     Tags, 
+    Pages,
     Posts, 
     Products, 
     Orders, 
