@@ -52,14 +52,9 @@ const Footer = {
                         {
                             name: 'slug',
                             type: 'text',
-                            label: 'Links',
+                            label: 'Link',
                             admin: {
                                 position: 'sidebar',
-                            },
-                            hooks: {
-                                beforeValidate: [
-                                    formatSlug("slug")
-                                ]
                             },
                         }
                     ],
