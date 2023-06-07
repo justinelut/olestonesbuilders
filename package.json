@@ -21,6 +21,7 @@
     "express": "^4.17.1",
     "nodemailer": "^6.9.2",
     "payload": "1.6.32",
+    "react-email": "^1.9.3",
     "socket.io": "^4.6.1",
     "styled-components": "^6.0.0-rc.1"
   },
